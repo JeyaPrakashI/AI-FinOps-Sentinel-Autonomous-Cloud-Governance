@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FinOps Open Cost & Usage Specification (FOCUS) v1.3 Contract",
+  "type": "object",
+  "required": ["ChargePeriodStart", "BilledCost", "ResourceId", "ProviderName"],
+  "properties": {
+    "ChargePeriodStart": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Start date/time of the billing period."
+    },
+    "BilledCost": {
+      "type": "number",
+      "minimum": 0,
+      "description": "The actual cost charged by the cloud provider."
+    },
+    "ResourceId": {
+      "type": "string",
+      "description": "Unique identifier for the cloud resource (e.g., ARN, ResourceID)."
+    },
+    "ProviderName": {
+      "type": "string",
+      "enum": ["AWS", "Azure", "GCP", "OCI"],
+      "description": "The cloud service provider name."
+    },
+    "ServiceCategory": {
+      "type": "string",
+      "description": "Normalized category (e.g., Compute, Storage, Database)."
+    }
+  }
+}
