@@ -15,8 +15,7 @@
 
 ## 🏗️ Technical Architecture
 
-```mermaid
-graph LR
+```mermaidgraph LR
     subgraph "Data Layer"
     A[(FOCUS 1.3 Ledger)] --> B(Python Ingestion)
     end
@@ -33,8 +32,8 @@ graph LR
     F --> H[Slack/Email Alert]
     end
 
-    style C fill:#f96,stroke:#333,stroke-width:2px
-    style F fill:#0078d4,stroke:#fff,stroke-width:2px
+    style C fill:#f96,stroke:#333,stroke-width:2px,color:#000
+    style F fill:#0078d4,stroke:#fff,stroke-width:2px,color:#fff
 ``` 
 * **Ingestion Layer**: Consumes multi-cloud billing exports normalized to the **FOCUS 1.3** open standard.
 * **AI Inference Layer**: Employs LLM-based reasoning to identify complex cost variances and "zombie" resources that traditional threshold-based monitors fail to capture.
