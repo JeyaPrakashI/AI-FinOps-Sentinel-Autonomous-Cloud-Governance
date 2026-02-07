@@ -15,7 +15,8 @@
 
 ## 🏗️ Technical Architecture
 
-```mermaidgraph LR
+```mermaid
+    graph LR
     subgraph "Data Layer"
     A[(FOCUS 1.3 Ledger)] --> B(Python Ingestion)
     end
