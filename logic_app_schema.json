@@ -1,0 +1,7 @@
+{
+  "type": "object",
+  "properties": {
+    "ResourceID": { "type": "string" },
+    "KILL_SIGNAL": { "type": "boolean" }
+  }
+}
