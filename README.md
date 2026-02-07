@@ -11,12 +11,30 @@
 ## 🚀 Executive Summary
 **Sentinel-1** is an autonomous governance framework designed to move FinOps from "Reporting" to "Remediation." By utilizing **Gemini 3 Flash** to reason over normalized **FOCUS 1.3** billing data, the engine detects cost anomalies and executes automated "kill-signals" through Azure Logic Apps. This ensures that cloud environments remain within strict budgetary and compliance boundaries without manual intervention.
 
-
-
 ---
 
 ## 🏗️ Technical Architecture
 
+```mermaid
+graph LR
+    subgraph "Data Layer"
+    A[(FOCUS 1.3 Ledger)] --> B(Python Ingestion)
+    end
+
+    subgraph "Intelligence Layer"
+    B --> C{Gemini 3 Flash}
+    C -- "Anomalies Detected" --> D[Policy Engine]
+    C -- "Compliant" --> E[Log & Pass]
+    end
+
+    subgraph "Remediation Layer"
+    D --> F[Azure Logic App]
+    F --> G[Terminate/Resize Resource]
+    F --> H[Slack/Email Alert]
+    end
+
+    style C fill:#f96,stroke:#333,stroke-width:2px
+    style F fill:#0078d4,stroke:#fff,stroke-width:2px ` ``` `
 * **Ingestion Layer**: Consumes multi-cloud billing exports normalized to the **FOCUS 1.3** open standard.
 * **AI Inference Layer**: Employs LLM-based reasoning to identify complex cost variances and "zombie" resources that traditional threshold-based monitors fail to capture.
 * **Remediation Handshake**: An event-driven bridge between the AI core and **Azure Logic Apps** to pause, resize, or terminate non-compliant cloud resources automatically.
