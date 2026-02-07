@@ -56,8 +56,9 @@ graph LR
 To ensure enterprise-grade security, this repository follows a modular structure:
 
 * **core/**: `sentinel_audit_engine.py` — The sanitized AI reasoning agent.
-* **integrations/**: `remediation_handler.py` — Infrastructure communication and action-validation logic.
-* **schemas/**: `focus_contract.json` — Definition for normalized input ingestion.
+* **integrations/**: `remediation_handler.py` — Secure infrastructure communication logic.
+* **schemas/**: `focus_contract.json` — FOCUS 1.3 data validation contract.
+* **samples/**: `focus_1_3_sample.csv` — Tier-1 compliant sample dataset for testing.
 
 ---
 
