@@ -4,7 +4,7 @@
 
 [![FinOps Standard](https://img.shields.io/badge/Standard-FOCUS%201.3-blue)](https://finops.org)
 [![Model](https://img.shields.io/badge/AI-Gemini%203%20Flash-orange)](https://deepmind.google/technologies/gemini/)
-[![Framework](https://img.shields.io/badge/Architecture-Event--Driven-red)](#architecture)
+[![Framework](https://img.shields.io/badge/Architecture-Event--Driven-red)](#%EF%B8%8F-technical-architecture)
 
 ---
 
