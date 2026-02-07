@@ -1,0 +1,10 @@
+ChargePeriodStart,BilledCost,EffectiveCost,ResourceId,ProviderName,AvailabilityZone,ServiceCategory
+2026-01-24T00:00:00Z,45.80,38.93,res-aws-ec2-7595,AWS,us-east-1a,Compute
+2026-01-24T00:00:00Z,12.15,10.33,res-aws-s3-8427,AWS,us-east-1a,Storage
+2026-01-24T00:00:00Z,18.50,15.72,res-aws-rds-5004,AWS,us-east-1a,Database
+2026-01-24T00:00:00Z,4.20,3.57,res-aws-net-2998,AWS,us-east-1a,Networking
+2026-01-24T00:00:00Z,0.75,0.64,res-az-vm-4281,Azure,eastus,Compute
+2026-01-24T00:00:00Z,0.08,0.07,res-az-disk-3899,Azure,eastus,Storage
+2026-01-24T00:00:00Z,0.02,0.02,res-az-ip-2554,Azure,eastus,Networking
+2026-01-24T00:00:00Z,210.00,178.50,res-oci-snow-2461,OCI,uk-south-1,Compute
+2026-01-24T00:00:00Z,45.00,38.25,res-oci-snow-5654,OCI,uk-south-1,Storage
