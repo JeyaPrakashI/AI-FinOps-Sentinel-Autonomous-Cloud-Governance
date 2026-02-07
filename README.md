@@ -34,7 +34,8 @@ graph LR
     end
 
     style C fill:#f96,stroke:#333,stroke-width:2px
-    style F fill:#0078d4,stroke:#fff,stroke-width:2px` ``` `
+    style F fill:#0078d4,stroke:#fff,stroke-width:2px
+``` 
 * **Ingestion Layer**: Consumes multi-cloud billing exports normalized to the **FOCUS 1.3** open standard.
 * **AI Inference Layer**: Employs LLM-based reasoning to identify complex cost variances and "zombie" resources that traditional threshold-based monitors fail to capture.
 * **Remediation Handshake**: An event-driven bridge between the AI core and **Azure Logic Apps** to pause, resize, or terminate non-compliant cloud resources automatically.
