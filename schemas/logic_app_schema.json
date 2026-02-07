@@ -1,0 +1,18 @@
+{
+  "type": "object",
+  "required": ["ResourceID", "KILL_SIGNAL", "Reason"],
+  "properties": {
+    "ResourceID": { 
+      "type": "string", 
+      "description": "The unique cloud identifier for the target resource." 
+    },
+    "KILL_SIGNAL": { 
+      "type": "boolean", 
+      "description": "Safety toggle: Must be true to trigger remediation." 
+    },
+    "Reason": { 
+      "type": "string", 
+      "description": "Audit trail explanation (e.g., 'Budget Exceeded $15k')." 
+    }
+  }
+}
