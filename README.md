@@ -72,5 +72,5 @@ To ensure enterprise-grade security, this repository follows a modular structure
 ## 👔 Professional Profile
 **AI FinOps Lead | Platform Architect** Specializing in the intersection of AI Architecture and Cloud Financial Operations for global remote teams.
 
-* **LinkedIn**: [My linkdeIn](linkedin.com/in/JeyaPrakashI/)
+* **LinkedIn**: [My linkedin](https://www.linkedin.com/in/JeyaPrakashI/)
 * **Focus Areas**: FinOps Strategy, Autonomous Governance, Multi-Cloud Architecture.
